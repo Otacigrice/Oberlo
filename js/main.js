@@ -1,12 +1,12 @@
  let nav=document.querySelector("#nav");
     let navItems = [
         { name: "Home", url: "index.html" ,active:true },
-        {  name: "About", url: "index.html#about" },
-        { name: "Models", url: "index.html#models" },
+        {  name: "About", url: "#about" },
+        { name: "Models", url: "#models" },
          { brand:true,name: "Oberlo", url: "index.html" },
-        { name: "Price", url: "index.html#price" },
-        { name: "Blog", url: "index.html#blog" },
-         { name: "Contact", url: "index.html#contact" },
+        { name: "Price", url: "#price" },
+        { name: "Blog", url: "#blog" },
+         { name: "Contact", url: "#contact" },
         { name: "Author", url: "author.html" }
         ];
    let navHTML = '';
@@ -449,6 +449,7 @@ document.getElementById("searchlink2").addEventListener("click", function(e){
         });
     }
 });
+
 
 
 
