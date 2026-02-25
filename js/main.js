@@ -2,14 +2,14 @@
     let currentPage = window.location.pathname.includes("author.html");
 
 let navItems = [
-    { name: "Home", url: "index.html" },
-    { name: "About", url: currentPage ? "index.html#about" : "#about" },
-    { name: "Models", url: currentPage ? "index.html#models" : "#models" },
-    { brand: true, name: "Oberlo", url: "index.html" },
-    { name: "Price", url: currentPage ? "index.html#price" : "#price" },
-    { name: "Blog", url: currentPage ? "index.html#blog" : "#blog" },
-    { name: "Contact", url: currentPage ? "index.html#contact" : "#contact" },
-    { name: "Author", url: "author.html" }
+    { name: "Home", url: "./index.html" },
+    { name: "About", url: currentPage ? "./index.html#about" : "#about" },
+    { name: "Models", url: currentPage ? "./index.html#models" : "#models" },
+    { brand: true, name: "Oberlo", url: "./index.html" },
+    { name: "Price", url: currentPage ? "./index.html#price" : "#price" },
+    { name: "Blog", url: currentPage ? "./index.html#blog" : "#blog" },
+    { name: "Contact", url: currentPage ? "./index.html#contact" : "#contact" },
+    { name: "Author", url: "./author.html" }
 ];
    let navHTML = '';
 
@@ -451,6 +451,7 @@ document.getElementById("searchlink2").addEventListener("click", function(e){
         });
     }
 });
+
 
 
 
