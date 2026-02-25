@@ -1,14 +1,16 @@
  let nav=document.querySelector("#nav");
-    let navItems = [
-        { name: "Home", url: "index.html" ,active:true },
-        {  name: "About", url: "#about" },
-        { name: "Models", url: "#models" },
-         { brand:true,name: "Oberlo", url: "index.html" },
-        { name: "Price", url: "#price" },
-        { name: "Blog", url: "#blog" },
-         { name: "Contact", url: "#contact" },
-        { name: "Author", url: "author.html" }
-        ];
+    let currentPage = window.location.pathname.includes("author");
+
+let navItems = [
+    { name: "Home", url: "index.html" },
+    { name: "About", url: currentPage ? "index.html#about" : "#about" },
+    { name: "Models", url: currentPage ? "index.html#models" : "#models" },
+    { brand: true, name: "Oberlo", url: "index.html" },
+    { name: "Price", url: currentPage ? "index.html#price" : "#price" },
+    { name: "Blog", url: currentPage ? "index.html#blog" : "#blog" },
+    { name: "Contact", url: currentPage ? "index.html#contact" : "#contact" },
+    { name: "Author", url: "author.html" }
+];
    let navHTML = '';
 
 navItems.forEach(item => {
@@ -449,6 +451,7 @@ document.getElementById("searchlink2").addEventListener("click", function(e){
         });
     }
 });
+
 
 
 
