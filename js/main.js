@@ -1,5 +1,5 @@
  let nav=document.querySelector("#nav");
-    let currentPage = window.location.pathname.includes("author");
+    let currentPage = window.location.pathname.includes("author.html");
 
 let navItems = [
     { name: "Home", url: "index.html" },
@@ -451,6 +451,7 @@ document.getElementById("searchlink2").addEventListener("click", function(e){
         });
     }
 });
+
 
 
 
